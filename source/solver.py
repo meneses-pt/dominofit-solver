@@ -178,12 +178,12 @@ def solve(
     return final_matrix
 
 
-# Black squares (w, h)
-black_squares = [(3, 0), (1, 1), (4, 3), (2, 4)]
-
-# Top numbers
-top_numbers = [2, 5, 3, 5, 3, 6]
-
-# Side numbers
-side_numbers = [5, 4, 2, 3, 4, 6]
-solve(6, top_numbers, side_numbers, black_squares)
+# # Black squares (w, h)
+# black_squares = [(3, 0), (1, 1), (4, 3), (2, 4)]
+#
+# # Top numbers
+# top_numbers = [2, 5, 3, 5, 3, 6]
+#
+# # Side numbers
+# side_numbers = [5, 4, 2, 3, 4, 6]
+# solve(6, top_numbers, side_numbers, black_squares)
