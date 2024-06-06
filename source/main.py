@@ -118,7 +118,7 @@ class MainWindow(QWidget):
         self.stacked_widget.setCurrentWidget(grid_window)
 
     def create_input_widget(self, input_field: QLineEdit, validator: QRegularExpressionValidator) -> QHBoxLayout:
-        input_field.setFixedWidth(20)
+        input_field.setFixedWidth(40)
         input_field.setValidator(validator)
         h_layout = QHBoxLayout()
         h_layout.addStretch(1)

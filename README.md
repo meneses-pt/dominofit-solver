@@ -31,7 +31,7 @@ Replace `main.py` with the name of the script you want to run.
 ## Build Executable
 
 ```bash
-pyinstaller --add-data 'images:images' --onefile -n dominofit-solver source/main.py
+pyinstaller --add-data 'images:images' --onefile --noconsole -n dominofit-solver source/main.py
 ```
 
 ## Code Style
