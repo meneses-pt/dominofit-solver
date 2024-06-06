@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "dominofit-solver"
+version = "0.1.0"
+description = "DominoFit Solver"
+authors = ["meneses-pt <andre@meneses.pt>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+black = "^24.3.2"
+ruff = "^0.4.4"
+mypy = "^1.10.0"
+PyQt6 = "^6.7.0"
+ortools = "^9.10.4067"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py38"]
+
+[tool.ruff]
+output-format = "full"
+line-length = 120
+exclude = [".venv", ".git", "helm", "terraform", "build"]
+target-version = "py38"
+lint.select = ["A", "ANN", "ASYNC", "B", "C4", "E", "F", "I", "ISC", "N", "Q", "SIM", "T20", "UP", "W"]
+lint.fixable = ["ANN", "C4", "I"]
+lint.ignore = [
+    "ANN101"
+]
+
+[tool.mypy]
+ignore_missing_imports = true
