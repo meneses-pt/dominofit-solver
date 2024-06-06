@@ -4,14 +4,16 @@ version = "0.1.0"
 description = "DominoFit Solver"
 authors = ["meneses-pt <andre@meneses.pt>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "~3.12"
 black = "^24.3.2"
 ruff = "^0.4.4"
 mypy = "^1.10.0"
 PyQt6 = "^6.7.0"
 ortools = "^9.10.4067"
+pyinstaller = "^6.7.0"
 
 [build-system]
 requires = ["poetry-core"]

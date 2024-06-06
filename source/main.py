@@ -16,7 +16,7 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from source.models import MatrixRow, PiecePart
+from source.models import MatrixRow, PiecePart, resource_path
 from source.solver import solve_from_matrix
 
 logging.basicConfig(level=logging.INFO)
@@ -179,7 +179,7 @@ def show_error_message(message: str) -> None:
 def main() -> None:
     app = QApplication([])
 
-    app.setWindowIcon(QIcon("../images/faviconV2.png"))
+    app.setWindowIcon(QIcon(resource_path("images/faviconV2.png")))
 
     stacked_widget = QStackedWidget()
     stacked_widget.setWindowTitle("Domino Fit Solver")

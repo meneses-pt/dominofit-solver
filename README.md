@@ -28,6 +28,12 @@ poetry run python main.py
 
 Replace `main.py` with the name of the script you want to run.
 
+## Build Executable
+
+```bash
+pyinstaller --add-data 'images:images' -n dominofit-solver source/main.py
+```
+
 ## Code Style
 
 This project uses Black for code formatting, Ruff for linting, and Mypy for type checking. You can run these tools using the provided `_stylescript.sh` script. Make sure to replace the `MY_CONDA_BIN_PREFIX` variable in the script with the path to your virtual environment.
